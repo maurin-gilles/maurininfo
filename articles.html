@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maurin Gilles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Maurin Gilles, Isima, Informatique, Informaticien, Ingénieur, Etudiant, Stagiaire, Clermont-Ferrand, Développeur">
+    <meta name="description" content="Page d'accueil du site web de Maurin Gilles.">
+    <link rel="icon" type="image/x-icon" href="./imgs/logo.svg">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/responsive.css">
+    <script src="./script/script.js"></script>
+</head>
+
+
+
+<body>
+
+    <nav class="menu-container">
+
+        <!-- burger menu -->
+        <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span>
+    
+        <!-- logo -->
+        <a  href=""class="menu-logo">
+          <img src="./imgs/logo.svg" alt="magilles5's logo"/>
+        </a>
+    
+        <!-- menu items -->
+        <div class="menu">
+          <ul></ul>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./aboutme.html">About me</a>
+            </li>
+            <li>
+              <a href="./iwashere.html">I was here!</a>
+            </li>
+            <li>
+              <a href="./articles.html">Articles</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    
+    <section class="articles_main">
+
+      <div class="cool_text">
+        <svg viewBox="0 0 960 180">
+          <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%">Articles</text>
+          </symbol>
+      
+          <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+          </g>
+        </svg>
+      </div>
+      
+
+
+      <section class="articles_intro">
+        This page gathers all the articles that I have written for the GaZZette, my school's newspaper.<br>
+        Unfortunately <b>they are written in
+        <span style="color:blue">Fr</span><span style="color:white">en</span><span style="color:red">ch</span> </b>
+        , and I don't feel patient enough to translate all of them into English :') <br><br>
+
+        You'll find my articles in the list below, each with a description and a button to download them. Otherwise, you can also check the full GaZZette issues here:
+      </section>
+
+      <!-- 
+      <form action="https://drive.google.com/drive/folders/1ACsyEZlbqycBdCJaPi6UkyzLOApAigR-?usp=drive_link">
+        <button type="submit" class="gzzt_btn" >View all the GaZZette editions (french)</button>
+      </form>
+      -->
+      
+      
+      <button type="submit" class="gzzt_btn" >
+        <a href="https://drive.google.com/drive/folders/1ACsyEZlbqycBdCJaPi6UkyzLOApAigR-?usp=drive_link">
+          See all the GaZZette editions (french)
+        </a>
+      </button>
+
+      <h1>All my articles</h1>
+
+
+      <ul class="articles_list">
+
+        <!-- Copy & Paste to add an article : -->
+        <!--
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+        
+        <li class="article" id="gzztXX_article">
+          <img class="article_img" src="./gzzt/covers/GaZZette_XX_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>Article Name</h2>
+            <p>
+              Article presentation
+            </p>
+          </div>
+          
+          <a href="gzzt/articles/GaZZette_XX_article.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        -->
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+        
+        <li class="article" id="gzzt56_mois_fiertes">
+          <img class="article_img" src="./gzzt/covers/GaZZette_56_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>Mois des fiertés</h2>
+            <p>
+              Le numéro 56 était le numéro de juin, donc celui qui sortait entre mes examens et mon immersion en laboratoire.
+              Toutefois, si le manque de temps m'a fait zapper le ZZeptième Art, je tenais à écrire quelque chose pour le mois des fiertés !
+              Cet article commence par l'histoire du mois des fiertés. Ensuite, je présente la marche des fiertés de Clermont-Ferrand.
+              Enfin, je partage une courte interview que j'ai pu obtenir avec un représentant de SOS Homophobie.
+            </p>
+          </div>
+          
+          <a href="gzzt/articles/GaZZette_56_mois_fiertes.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+        
+        <li class="article" id="tlzzn1_article">
+          <img class="article_img" src="./gzzt/covers/PlaniZZphere_1_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>Birobidjan : L'Israël russe</h2>
+            <p>
+              Cette chronique n'a pas été écrite pour une GaZZette, mais pour TelluZZEon, le club d'histoire/géographie dont je fais partie (cf la présentation deux articles plus bas)<br>
+              On essaie de faire de chaque mois un mois thématique sur un pays, et en l'occurrence, il s'agissait de la Russie.
+              J'ai donc proposé un article pour parler de l'oblast autonome juif. Compte tenu de l'actualité, je reconnais avoir choisi un sujet dangereux sur le plan démagogique...
+            </p>
+          </div>
+          
+          <a href="gzzt/articles/PlaniZZphere_1_Birobidjan.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+        
+        <li class="article" id="gzzt55_za">
+          <img class="article_img" src="./gzzt/covers/GaZZette_55_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>ZZeptième Art : Elvis</h2>
+            <p>
+              L'idée de ce ZZeptième Art m'est venue quand je sortais du cinéma, m'étant influgé l'affligeant visionage de Back to black.
+              J'avais des comptes à régler avec la flopée de biopics musicaux moyens qui sorent en ce moment.
+              Toutefois, l'idée de ma rubrique étant de pouvoir recommander des films, je finis par présenter la superbe exception : Elvis.
+            </p>
+          </div>
+          
+          <a href="gzzt/articles/GaZZette_55_ZA.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+        
+        <li class="article" id="gzzt55_telluzzeon">
+          <img class="article_img" src="./gzzt/covers/GaZZette_55_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>Présentation de TelluZZEon</h2>
+            <p>
+              J'avais interviewé les nouveaux mandats de clubs dans le numéro 53, mais TelluZZEon, le club d'histoire/géographie, n'existait pas encore.
+              Sa qualité de retardataire ne devait pas le priver de se présenter. Or, autre particularité parmi tant, je suis secrétaire et responsable du pôle géographie du club.
+              Du coup, je me suis en quelques sortes auto-interviewé, un concept bien intéressant.
+            </p>
+          </div>
+          
+          <a href="gzzt/articles/GaZZette_55_telluzzeon.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+        
+        <li class="article" id="gzzt54_za">
+          <img class="article_img" src="./gzzt/covers/GaZZette_54_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>ZZeptième Art : Night is short, Walk on girl</h2>
+            <p>
+              Cette édition de ZZeptième Art fait hommage à une facette de moi qui n'est pas la plus glorieuse.
+              En effet, je me trouve être ce qu'on appelle, dans le milieu, une énorme weebasse. Au point d'avoir rejoint Izziweeb (club de culture japonaise) comme responsable des projections.
+              Je parle donc cette fois de Night is short, Walk on girl, un film d'animation japonaise, un de mes préférés :)
+            </p>
+          </div>
+          
+          <a href="gzzt/articles/GaZZette_54_ZA.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+        
+        <li class="article" id="gzzt53_za">
+          <img class="article_img" src="./gzzt/covers/GaZZette_53_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>ZZeptième Art : Brazil</h2>
+            <p>
+              Ce numéro de La GaZZette parlait des passations des clubs à Isima. Au-dessus de tous les clubs, il y a le BDE.
+              Or le BDE est élu parmi plusieurs listes, chacune se mettant aux couleurs d'un thème. Et le BDE nouvellement élu est issu de la liste "BraZZil".
+              Comme il s'agit aussi d'un excellent film, j'ai décidé de parler de l'œuvre homonyme.
+              Dans ce sixième numéro de ZZeptième Art, c'est Brazil !
+            </p>
+          </div>
+          
+          <a href="gzzt/articles/GaZZette_53_ZA.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+        
+        <li class="article" id="gzzt53_hizztoire">
+          <img class="article_img" src="./gzzt/covers/GaZZette_53_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>L'HiZZtoire qui aura peut-être une fin</h2>
+            <p>
+              Dans ce numéro de La GaZZette, j'ai voulu commencer un projet collaboratif.
+              L'idée serait d'écrire une histoire au fil des GaZZettes, qui serait poursuivie par une personne différente à chaque numéro.
+              L'HiZZtoire qui aura peut-être une fin commence ici, et je suis l'auteur de ses premières pages.
+            </p>
+          </div>
+          
+          <a href="gzzt/articles/GaZZette_53_hizztoire.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+        
+        <li class="article" id="gzzt52_za">
+          <img class="article_img" src="./gzzt/covers/GaZZette_52_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>ZZeptième Art : Le Théorème de Marguerite</h2>
+            <p>
+              Pour la première fois de l'histoire de ZZeptième Art, je parlais d'un film que j'avais pu voir au cinéma seulement quelques mois auparavant !
+              Un film qui m'avait beucoup parlé et énormément touché. Peut-être parce qu'il m'est arrivé d'avoir eu du mal avec les relations humaines.
+              Peut-être parce que j'aime bien les maths. Peut-être parce que j'aimerais faire une thèse. Que de théories !
+              En tout cas, dans ce cinquième numéro de ZZeptième Art, c'est Le Théorème de Marguerite !
+            </p>
+          </div>
+          
+          <a href="gzzt/articles/GaZZette_52_ZA.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+
+        <li class="article" id="gzzt51_za">
+          <img class="article_img" src="./gzzt/covers/GaZZette_51_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>ZZeptième Art : Illusions Perdues</h2>
+            <p>
+              Ce numéro de la GaZZette étant mon premier en tant que rédacteur en chef, je voulais en profiter pour parler de journalisme !
+              En plus de ça, il comptait le premier numéro d'une rubrique parlant de littérature.
+              Alliant l'un à l'autre, j'ai choisi un film adapté d'un roman de Balzac dont la protagoniste devient journaliste.
+              Dans ce quatrième numéro de ZZeptième Art, c'est Illusions Perdues !
+            </p>
+          </div>
+          
+          <a href="gzzt/articles/GaZZette_51_ZA.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+
+        <li class="article" id="gzzt51_calendrier">
+          <img class="article_img" src="./gzzt/covers/GaZZette_51_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>Calendrier Événémentiel de 2024</h2>
+            <p>
+              Pour notre premier numéro de l'année (mon numéro d'essai en rédacteur en chef !), nous avons fait un petit calendrier événementiel.
+              L'idée, c'est que pour chaque mois de 2024, nous présentions un festival ou événement culturel qui allait avoir lieu à Clermont-Ferrand ou ses alentours.
+              Dans ce cadre, j'ai aussi pu prendre contact avec les organisateurs de certains de ces festivals pour qu'ils en parlent eux-mêmes.
+            </p>
+          </div>
+          
+          <a href="gzzt/articles/GaZZette_51_calendrier.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+        
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+
+        <li class="article" id="gzzt50_za">
+          <img class="article_img" src="./gzzt/covers/GaZZette_50_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>ZZeptième Art : Love Actually</h2>
+            <p>
+              Notre dernière GaZZette avant Noël, je ne pouvais pas l'ignorer !
+              Et dans la catégorie souvent médiocre des films de Noël, il y en a un qui mérite à mes yeux autant d'amour qu'il nous en procure.
+              Dans ce numéro de ZZeptième Art, c'est Love Atually !
+            </p>
+          </div>
+          
+          <a href="./gzzt/articles/GaZZette_50_ZA.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+        
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+        
+        <li class="article" id="gzzt49_za">
+          <img class="article_img" src="./gzzt/covers/GaZZette_49_cover.jpg"/>
+
+          <div class="article_presentation">
+            <h2>ZZeptième Art : 12 hommes en colère</h2>
+            <p>
+              Les listes pour la passation du BDE d'Isima étaient formées, et les campagnes faisaient rage. 
+              Observant le phénomène de l'intérieur, j'y vis une abondance de biais sociaux qui me rappela le chef-d'œuvre de Sidney Lumet. 
+              Dans ce deuxième numéro de ma petite chronique cinéma, c'était 12 hommes en colère !
+            </p>
+          </div>
+          
+         <a href="./gzzt/articles/GaZZette_49_ZA.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+
+        <li class="article" id="gzzt48_za">
+          <img class="article_img" src="./gzzt/covers/GaZZette_48_cover.jpg">
+
+          <div class="article_presentation">
+            <h2>ZZeptième Art : Office Space</h2>
+            <p>
+              En lançant cette chronique, j'ai l'ambition de parler de cinéma à des geeks. 
+              Toutefois, il est hors de question que je parle de Star Wars. Heureusement, j'ai mieux dans la catégorie <i>Film culte des geeks</i> : une comédie américaine comme ils n'en font plus. 
+              Dans ce premier numéro de ZZeptième Art, c'est Office Space de Mike Judge.
+            </p>
+          </div>
+          
+         <a href="./gzzt/articles/GaZZette_48_ZA.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+
+        <li class="article" id="gzzt_48_election">
+          <img class="article_img" src="./gzzt/covers/GaZZette_48_cover.jpg">
+
+          <div class="article_presentation">
+            <h2>Elections de l'Université Clermont Auvergne</h2>
+            <p>
+              Cet article sort une semaine avant que les élections pour les représentants des étudiants au conseil d'adminstration de l'université aient lieu.
+              Ce sont donc des élections très importantes, mais à laquelle le taux de participation est affreusement bas, les étudiants étant trop mal renseignés à son sujet.
+              Dans cet article, je récapitule l'intérêt de ces élections à travers un organigramme simplifié et une interview.
+          </div>
+          
+         <a href="gzzt/articles/GaZZette_48_elections.pdf"><button class="article_btn" >Read it</button></a>
+        </li>
+
+        <div class="animated_dashed_line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+      </ul>
+
+      
+
+    </section>
+
+</body>
+</html>
