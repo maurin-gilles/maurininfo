@@ -24,6 +24,11 @@ nav, section, button {
     text-decoration: none;
 }
 
+:root {
+  --ylw:#E9CE2C;
+  --ppl:#B0228C;
+}
+
 li {
   overflow:hidden;
 }
@@ -41,7 +46,7 @@ p a {
 }
 
 p a:hover {
-  color:rgba(205,64,169,1);
+  color:var(--ppl);
 }
 
 /***************************************************************************************************************************************************************************************************/
@@ -53,7 +58,7 @@ p a:hover {
   display: flex;
   align-items: center;
   background: #EBE8E7;
-  color: #E9CE2C;
+  color: var(--ylw);
   padding: 10px;
   z-index: 3;
   -webkit-user-select: none;
@@ -81,11 +86,11 @@ p a:hover {
 }
 
 .menu-container a:hover {
-  color: #B0228C;
+  color: var(--ppl);
 }
 
 .menu-container a:active {
-  color: #E9CE2C;
+  color: var(--ylw);
 }
 
 .menu-container input {
@@ -170,7 +175,7 @@ p a:hover {
 
 .main_image img {
   width:100%;
-  border-bottom: solid thick #E9CE2C;
+  border-bottom: solid thick var(--ylw);
 }
 
 .index_main h1 {
@@ -206,22 +211,22 @@ p a:hover {
 }
 
 #ENCV {
-  background: rgba(205,64,169,1);
+  background: var(--ppl);
 }
 
 #ENCV:hover {
   background-color:#EBE8E7;
-  border-color: rgba(205,64,169,1);
+  border-color: var(--ppl);
   transform: scale(115%);
 }
 
 #FRCV {
-  background: rgba(236,217,103,1);
+  background: var(--ylw);
 }
 
 #FRCV:hover {
   background-color:#EBE8E7;
-  border-color: rgba(236,217,103,1);
+  border-color: var(--ylw);
   transform: scale(115%);
 }
 
@@ -247,8 +252,7 @@ p a:hover {
 
 
 .gt_border_ext{
-  rotate:4deg;
-  background: linear-gradient(140deg, rgba(233,206,44,1) 0%, rgba(176,34,140,1) 100%);
+  background: linear-gradient(140deg, var(--ylw) 0%, var(--ppl) 100%);
   padding: 5px;
   max-width: 60vw;
   margin: auto;
@@ -267,7 +271,6 @@ p a:hover {
 }
 
 .gt_border_int p, .gt_border_int h2 {
-  rotate:-4deg;
   font-size: 150%;
 }
 
@@ -277,12 +280,23 @@ p a:hover {
   margin-bottom:0.5em;
 }
 
-#aboutme_cursus, #iwh_fedea {
+/***************************************************************************************************************************************************************************************************/
+/* POSITIONING ELEMENTS IN ABOUTME AND IWASHERE PAGES */
+/***************************************************************************************************************************************************************************************************/
+
+
+/*****************/
+/* About me page */
+/*****************/
+
+/* My cursus */
+
+#aboutme_cursus{
+  margin:auto;
   rotate: -5deg;
 }
 
-#aboutme_cursus p, #aboutme_cursus h2, #aboutme_cursus img,
-#iwh_fedea p, #iwh_fedea h2, #iwh_fedea img {
+#aboutme_cursus p, #aboutme_cursus h2, #aboutme_cursus img {
   rotate: 5deg;
 }
 
@@ -291,8 +305,10 @@ p a:hover {
   margin-left:4em;
 }
 
+/* Computer science */
+
 #aboutme_cs {
-  margin-top:6em;
+  margin:auto;
   rotate: 5deg;
 }
 
@@ -305,22 +321,36 @@ p a:hover {
   margin:0 0 -1em 40vw;
 }
 
-#enigma_logo {
-  max-height: 12em;
-  margin: 0 0 -2em 40vw;
+/* Music */
+
+#aboutme_music {
+  margin-top: 8vh;
+  rotate:-2deg;
 }
 
-#telluzzeon_logo {
-  max-height: 11em;
-  margin: 0 0 -3em 45vw;
+#aboutme_music p, #aboutme_music h2 {
+  rotate:2deg;
 }
 
-#fedea_logo {
-  max-height:20em;
-  margin: -6em 0 -8em 4em;
+/******************/
+/* I was here page*/
+/******************/
+
+/* Credit Agricole Centre France */
+
+#iwh_cacf {
+  margin:auto;
+  rotate: 1deg;
 }
+
+#iwh_cacf p, #iwh_cacf h2 {
+  rotate: -1deg;
+}
+
+/* Lebon */
 
 #iwh_lebon {
+  margin-top:8em;
   rotate: -7deg;
 }
 
@@ -328,9 +358,7 @@ p a:hover {
   rotate:7deg;
 }
 
-#iwh_fedea {
-  margin-top:14vh;
-}
+/* GaZZette */
 
 #iwh_gazzette {
   margin-top:15vh;
@@ -351,21 +379,39 @@ p a:hover {
   overflow: visible;
 }
 
-#iwh_isff, #aboutme_music {
-  margin-top:8vh;
-  rotate:-2deg;
+/* FedEA */
+
+#iwh_fedea {
+  rotate:1deg;
+  margin-top:14vh;
 }
 
-#iwh_isff h2, #iwh_isff p,  #iwh_isff img,
-#aboutme_music h2, #aboutme_music p {
-  rotate:2deg;
+#iwh_fedea p, #iwh_fedea h2, #iwh_fedea img {
+  rotate:-1deg;
 }
 
-#isff_2023 {
-  max-height:12em;
-  margin-left:2em;
-  margin-top:1em;
+#fedea_logo {
+  max-height:20em;
+  margin: -6em 0 -8em 4em;
 }
+
+/* Enigma */
+
+#iwh_enigma {
+  margin:auto;
+  rotate:1deg;
+}
+
+#iwh_enigma p, #iwh_enigma h2, #iwh_enigma img {
+  rotate:-1deg;
+}
+
+#enigma_logo {
+  max-height: 12em;
+  margin: 0 0 -2em 40vw;
+}
+
+/* TelluZZEon */
 
 #iwh_telluzzeon {
   rotate:1deg;
@@ -374,6 +420,28 @@ p a:hover {
 
 #iwh_telluzzeon p, #iwh_telluzzeon h2, #iwh_telluzzeon img {
   rotate:-1deg;
+}
+
+#telluzzeon_logo {
+  max-height: 11em;
+  margin: 0 0 -3em 45vw;
+}
+
+/* Clermont ISFF */
+
+#iwh_isff {
+  margin-top:8vh;
+  rotate:-2deg;
+}
+
+#iwh_isff h2, #iwh_isff p,  #iwh_isff img {
+  rotate:2deg;
+}
+
+#isff {
+  max-height:12em;
+  margin-left:2em;
+  margin-top:1em;
 }
 
 /***************************************************************************************************************************************************************************************************/
@@ -411,7 +479,7 @@ svg {
 }
 
 .text-copy:nth-child(2){
-  stroke: #b0228c;
+  stroke: var(--ppl);
   animation-delay: -2s;
 }
 
@@ -426,7 +494,7 @@ svg {
 }
 
 .text-copy:nth-child(5){
-  stroke: #e9ce2c;
+  stroke: var(--ylw);
   animation-delay: -5s;
 }
 
@@ -476,35 +544,35 @@ svg {
 }
 
 @keyframes first {
-  0% { background-color: #b0228c; }
+  0% { background-color: var(--ppl); }
   25% { background-color: #687ec9; }
   50% { background-color: #4ecdb4; }
-  75% { background-color: #e9ce2c; }
-  100% { background-color: #b0228c; }
+  75% { background-color: var(--ylw) }
+  100% { background-color: var(--ppl); }
 }
 
 @keyframes second {
   0% { background-color: #687ec9; }
   25% { background-color: #4ecdb4; }
-  50% { background-color: #e9ce2c; }
-  75% { background-color: #b0228c; }
+  50% { background-color: var(--ylw) }
+  75% { background-color: var(--ppl); }
   100% { background-color: #687ec9; }
 }
 
 @keyframes third {
   0% { background-color: #4ecdb4; }
-  25% { background-color: #e9ce2c; }
-  50% { background-color: #b0228c; }
+  25% { background-color: var(--ylw) }
+  50% { background-color: var(--ppl);}
   75% { background-color: #687ec9; }
   100% { background-color: #4ecdb4; }
 }
 
 @keyframes fourth {
-  0% { background-color: #e9ce2c; }
-  25% { background-color: #b0228c; }
+  0% { background-color: var(--ylw) }
+  25% { background-color: var(--ppl); }
   50% { background-color: #687ec9; }
   75% { background-color: #4ecdb4; }
-  100% { background-color: #e9ce2c; }
+  100% { background-color: var(--ylw) }
 }
 
 
@@ -536,7 +604,7 @@ svg {
   border: solid black 3px;
   padding: 0.5em 2em 0.5em 2em;
   border-radius: 10px;
-  background: linear-gradient(45deg, rgba(176,34,140,70%) 50%, rgba(233,206,44,70%) 50%);
+  background: linear-gradient(45deg, var(--ppl) 50%, var(--ylw) 50%);
   display:block;
   margin-left:auto;
   margin-right:auto;
@@ -552,7 +620,7 @@ svg {
 }
 
 .gzzt_btn:hover {
-  background: linear-gradient(-45deg, rgba(176,34,140,70%) 50%, rgba(233,206,44,70%) 50%);
+  background: linear-gradient(-45deg, var(--ppl) 50%, var(--ylw) 50%);
   overflow:visible;
   transform: scale(110%);
 }
@@ -598,14 +666,14 @@ svg {
   width:4em;
   border: solid 2px black;
   border-radius:50%;
-  background:rgba(176,34,140,70%);
+  background:var(--ppl);
   color:black;
   text-align: center;
   vertical-align: bottom;
 }
 
 .article_btn:hover {
-  background:rgba(233,206,44,70%);
+  background:var(--ylw);
 }
 
 /***************************************************************************************************************************************************************************************************/
@@ -638,12 +706,12 @@ svg {
 .contact_list li a {
   text-decoration: none;
   font-weight: bold;
-  color: #B0228C;
+  color: var(--ppl);
 }
 
 .contact_list li a:hover {
   text-decoration: none;
-  color: #E9CE2C;
+  color: var(--ylw);
   transform: rotate(5deg);
 }
 
@@ -715,7 +783,6 @@ svg {
   }
 
   #iwh_isff, #aboutme_music {
-    max-width:70vw;
     width:70vw;
     margin-right:8vw;
   }
