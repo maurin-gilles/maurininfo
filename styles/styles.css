@@ -191,7 +191,6 @@ p a:hover {
 /***************************************************************************************************************************************************************************************************/
 
 .CVs {
-  rotate:-4deg;
   margin:auto;
   margin-top: 2em;
   display:flex;
@@ -289,6 +288,17 @@ p a:hover {
 /* About me page */
 /*****************/
 
+/* Who I am */
+
+#aboutme_coucou{
+  margin-top:7vh;
+  rotate:2deg;
+}
+
+#aboutme_coucou p, #aboutme_coucou h2{
+  rotate:-2deg;
+}
+
 /* My cursus */
 
 #aboutme_cursus{
@@ -309,6 +319,7 @@ p a:hover {
 
 #aboutme_cs {
   margin:auto;
+  margin-top:10vh;
   rotate: 5deg;
 }
 
@@ -340,6 +351,7 @@ p a:hover {
 
 #iwh_cacf {
   margin:auto;
+  margin-top:8vh;
   rotate: 1deg;
 }
 
@@ -382,12 +394,12 @@ p a:hover {
 /* FedEA */
 
 #iwh_fedea {
-  rotate:1deg;
+  rotate:-4deg;
   margin-top:14vh;
 }
 
 #iwh_fedea p, #iwh_fedea h2, #iwh_fedea img {
-  rotate:-1deg;
+  rotate:4deg;
 }
 
 #fedea_logo {
@@ -414,12 +426,12 @@ p a:hover {
 /* TelluZZEon */
 
 #iwh_telluzzeon {
-  rotate:1deg;
-  margin-top:10vh;
+  rotate:11deg;
+  margin-top:14vh;
 }
 
 #iwh_telluzzeon p, #iwh_telluzzeon h2, #iwh_telluzzeon img {
-  rotate:-1deg;
+  rotate:-11deg;
 }
 
 #telluzzeon_logo {
@@ -430,7 +442,7 @@ p a:hover {
 /* Clermont ISFF */
 
 #iwh_isff {
-  margin-top:8vh;
+  margin-top:15vh;
   rotate:-2deg;
 }
 
