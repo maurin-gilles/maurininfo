@@ -144,6 +144,21 @@
                 I made a poster when I reached that point. Some ideas are now deprecated, but the main part of it remains a good introduction to my subject. It can be found <a href="docs/poster.pdf"><b><u>here</u></b></a>.
             </p>
 
+            <h3>Dynamic histogram generation</h3>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                I have only had three hours in my timetable devoted to research for the last months, so progressing takes time.
+                However, I eventually came with interesting ideas to answer to the question "what information to collect to be able to determine better plans when we have zero initial knowledge about our data sources?".
+                The main issue in this question is the absence of hypothesis about the sources.
+                Some heuristics exist to approximate the size of the output of a join, but they require at least the size of the sources as an input, and more precise information about the data repartition to be efficient.
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <b>Histograms</b> are a common way to store information about the data repartition within a source, and can provide good estimates of join results.
+                Different kind of histograms exist (equal-width, equal-height), unfortunately they are unusable in a case when data is explored sample by sample from scratch.
+                My idea is an algorithm that computes a sort of a dynamic histogram that dynamically tends to fit with the data repartition.
+                My first rough tests seem promising, and if it is proven efficient, it could be a very useful tool for dynamic query optimisation.
+            </p>
+
         </section>
 
     </section>
