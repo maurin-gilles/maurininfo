@@ -2,9 +2,7 @@
 
     html, body {
       overflow-x: hidden;
-    }
-    body {
-      position: relative
+      width:100vw;
     }
 
     .gt_border_int p {
@@ -71,13 +69,15 @@
     }
 
     .aboutme_main, .iwh_main {
+      max-width:100%;
+      overflow:hidden;
       margin:auto;
       padding:auto;
     }
 
     .gt_border_ext {
-      width:100vw;
-      max-width:100vw;
+      max-width:100%;
+      overflow:hidden;
       margin-left:0vw;
     }
 
