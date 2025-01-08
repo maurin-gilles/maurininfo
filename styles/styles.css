@@ -755,7 +755,6 @@ svg {
 .contact_list li a:hover {
   text-decoration: none;
   color: var(--ylw);
-  transform: rotate(5deg);
 }
 
 
