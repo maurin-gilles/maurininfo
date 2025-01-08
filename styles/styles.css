@@ -644,10 +644,10 @@ svg {
 /***************************************************************************************************************************************************************************************************/
 
 .gzzt_btn {
-  border: solid black 3px;
+  border: solid var(--ylw) 3px;
   padding: 0.5em 2em 0.5em 2em;
   border-radius: 10px;
-  background: linear-gradient(45deg, var(--ppl) 50%, var(--ylw) 50%);
+  background: transparent;
   display:block;
   margin-left:auto;
   margin-right:auto;
@@ -655,6 +655,7 @@ svg {
   max-width:12em;
   text-decoration: none;
   color:black;
+  transition: transform 200ms ease-in-out;
 }
 
 .gzzt_btn a {
@@ -663,9 +664,9 @@ svg {
 }
 
 .gzzt_btn:hover {
-  background: linear-gradient(-45deg, var(--ppl) 50%, var(--ylw) 50%);
   overflow:visible;
-  transform: scale(110%);
+  border: solid var(--ppl) 3px;
+  transform: scale(120%);
 }
 
 .articles_main h1 {
