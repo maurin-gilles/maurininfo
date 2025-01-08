@@ -83,8 +83,64 @@
             <span></span>
             <span></span>
             <span></span>
-          </div>
-          <div></div>
+        </div>
+        <div></div>
+
+        <section class="research_work">
+            <h2>Dynamic query optimisation in data integration systems</h2>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                This is the work I began in june 2024 for my research initiation program within the <b><a href="https://limos.fr/">LIMOS</a></b>, superviseb by <b><a href="https://limos.fr/detailperson/85">Jean-Philippe Gayon</a></b> for the general research aspects, and <b><a href="https://limos.fr/detailperson/501">Maxime Buron</a></b> for the technial aspects.
+                This section will introduce the subjects and the first ideas of my work. A work-in-progress paper and some code are available on this <b><a href="https://gitlab.isima.fr/magilles5/parcours-recherche">GitLab repo</a></b>.
+            </p>
+
+            <h3>Goals</h3>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                The problem settles in a big data environment, precisely in data integration systems, whose goal is to provide a homogeneous access to data from different sources.
+                A major property of data integration systems is this necessity to work with data sources that evolve indepently, on different formats, with different access times, and a lack of available information about the data.
+                This is a key difference with regular DBMS, that calls for specific optimisation techniques, as it will be introduced in the following paragraphs.
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Data integration systems follow the goal of the DBMS to provide a semantic-oriented access to data, thus answering to human queries through an unified language.
+                We chose to focus on the relational model, where queries are parsed as logical expressions over relational algebra.
+                An expression answering to a specific query is called "query plan", and each meets several equivalent plans, that produces the same output for the same sources, but makes it through a different sequence of operators.
+                Though such plans are algebraically similar, the difference between their computing time can be arbitrarily high.
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                The goal of query optimisation is to search for the best, or at least a good enough query plan.
+                Some optimisation techniques over some operators are insured to always be optimal.
+                It is not the case for joins. They are a major operator in relational algebra and can appear in number in complex queries.
+                Unfortunately, their outputs are difficult to predict, they have a huge computing time, and the possibilites to structure them become impossible to explore exhaustively for queries involving many joins.
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Regular relational DBMS meet this issue by saving information about the data their store that enables them to make decent predictions on the size of the joins.
+                However, this method can't be applied to a data integration problem, because the sources are independent.
+                The ideas I am exploring consist in "dynamic" query optimisation. The goal is to start processing a sub-optimal plan, and to switch to a better one during execution thanks to information gained along the way.
+                My work can be summarized as the seek of answers to these questions:
+                <ul>
+                    <li>What sub-optimal plan to start with</li>
+                    <li>What information to collect</li>
+                    <li>How this information allows computing better plans</li>
+                    <li>Is the plan improvement worth the cost of collecting information</li>
+                    <li>How to switch plan without losing the results computed so far</li>
+                </ul>
+            </p>
+
+            <h3>Pipelining joins</h3>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Among the questions set aobve, the first that I have been told to look at was the last one: "How to switch from a plan to another without losing the results computed so far?"
+                To begin, we looked only at plans whith sources joined over the same attribute, and forgot all the other opeartors in the query.
+                The hypothesis had been made by Maxime Buron that the "double-pipelined hashjoin", a specific algorithm to process joins, could be benefic in that case.
+                I made an implementation of this algorithm on <b><a href="https://gitlab.inria.fr/cedar/tatooine">Tatooine</a></b> a data integration simulation project Maxime had already worked on.
+                We improved this implemenatation until it got performances similar to other algorithms, thus justifying that it could be used in pratice.
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+            </p>
+
+        </section>
+
     </section>
 </body>
 </html>
