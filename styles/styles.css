@@ -626,13 +626,13 @@ svg {
   text-align:justify;
 }
 
-.research_work p, .research_work ul {
+.research_work p,.research_work ul  {
   font-size:120%;
   margin:0 18vw 0 18vw;
   text-align:justify;
 }
 
-.research_work p{
+.research_work p {
   margin-bottom:1.5em;
 }
 

@@ -104,6 +104,8 @@
 
     .intro {
       font-size:110%;
+      margin:0;
+      padding:2vh 7vw 0 7vw;
     }
 
     .articles_main h1 {
@@ -118,7 +120,7 @@
 
     .article_presentation {
       order:2;
-      max-width: 70vw;
+      max-width: 80vw;
     }
 
     .article_presentation p {
@@ -138,6 +140,31 @@
 
     .article_btn {
       font-size: small;
+    }
+
+    .research_work {
+      padding:2vh 7vw 0 7vw;
+    }
+
+    .research_work p, .research_work ul {
+      font-size:100%;
+      margin:0;
+    }
+
+    .research_work p {
+      margin-bottom:1.5em;
+    }
+
+    .research_work h2 {
+      margin:0 0 2vh 0;
+      padding:0;
+      font-size:200%;
+    }
+    
+    .research_work h3 {
+      margin:2vh 0 2vh 0;
+      padding:0;
+      font-size:130%;
     }
 
     .contact_main {
