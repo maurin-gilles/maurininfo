@@ -8,7 +8,6 @@
     <meta name="description" content="Page d'accueil du site web de Maurin Gilles.">
     <link rel="icon" type="image/x-icon" href="./imgs/logo.svg">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="./styles/bg_animation.css">
     <link rel="stylesheet" type="text/css" href="./styles/responsive.css">
     <script src="./script/script.js"></script>
 </head>
@@ -16,6 +15,60 @@
 
 
 <body>
-    Coming soon
+    <nav class="menu-container">
+        <!-- burger menu -->
+        <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!-- logo -->
+        <a  href=""class="menu-logo">
+            <img src="./imgs/logo.svg" alt="magilles5's logo"/>
+        </a>
+
+        <!-- menu items -->
+        <div class="menu">
+            <ul></ul>
+            <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./aboutme.html">About me</a>
+            </li>
+            <li>
+                <a href="./iwashere.html">I was here!</a>
+            </li>
+            <li>
+                <a href="./research.html">Research</a>
+            </li>
+            <li>
+                <a href="./articles.html">Articles</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="research_main">
+        <div class="cool_text">
+            <svg viewBox="0 0 960 180">
+              <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">Research</text>
+              </symbol>
+          
+              <g class = "g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+              </g>
+            </svg>
+          </div>
+    </section>
 </body>
 </html>

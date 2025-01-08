@@ -1,5 +1,12 @@
 @media only screen and (max-width: 767px) { 
 
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative
+    }
+
     .gt_border_int p {
       font-size:120%;
     }
@@ -91,8 +98,8 @@
       max-height:8em;
     }
 
-    .articles_main {
-      margin-top:10px;
+    .articles_main, .research_main {
+      margin-top:6vh;
     }
 
     .articles_intro {
