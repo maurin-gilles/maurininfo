@@ -4,7 +4,7 @@
 
 html, body, div, a,
 h1, h2, h3, h4, h5, h6, p, blockquote,
-em, img, strong, var, caption
+em, img, strong, var, caption, .articles_list, .articles_list li,
 table, tbody, tfoot, thead, tr, th, td,
 article, aside, figcaption, footer, header,
 nav, section, button {
