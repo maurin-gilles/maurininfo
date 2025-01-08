@@ -608,13 +608,15 @@ svg {
 
 /* articles */
 
-.articles_intro {
+.intro {
   width:100%;
   margin:auto;
   text-align:center;
   font-size:150%;
   padding: 0 15vw 0 15vw;
 }
+
+/* articles */
 
 .gzzt_btn {
   border: solid black 3px;
