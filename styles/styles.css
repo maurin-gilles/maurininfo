@@ -4,7 +4,7 @@
 
 html, body, div, a,
 h1, h2, h3, h4, h5, h6, p, blockquote,
-em, img, strong, var, caption, .articles_list, .articles_list li,
+em, img, strong, var, caption, .articles_list, .articles_list,
 table, tbody, tfoot, thead, tr, th, td,
 article, aside, figcaption, footer, header,
 nav, section, button {
@@ -194,6 +194,7 @@ p a:hover {
   display:flex;
   justify-content: space-around;
   width: 60%;
+  padding: 0;
 }
 
 .CVs li {
