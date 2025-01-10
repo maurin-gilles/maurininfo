@@ -71,10 +71,10 @@
           </div>
 
         <section class="intro">
-            I aim to do a PhD, so I made this page to gather all the research work I'll do during my internships and within the research initiation program I attend.
-            I'm not sure yet of the very field I want to specialise in, but I the subjects I feel drawn to are <b>combinatorial optimisation</b>, <b>very large databases </b>and <b>AI</b>.<br><br>
-            My profile is at the crossroads of the maths nerd, the computer nerd, the philosophy nerd and the arts nerd.
-            It is useful to fit in various environments, but I feel that bringing original, multilayered approaches to problems can be my strength in research.
+            I want to do a PhD, so I've made this page to gather all the research work I'll be doing during my internships and within the research initiation programme I'm attending.
+            I'm not sure what I want to specialise in yet, but the topics I feel drawn to are <b>combinatorial optimisation</b>, <b>very large databases </b>and <b>AI</b>.<br><br>
+            My profile is at the intersection of the maths nerd, the computer nerd, the philosophy nerd and the art nerd.
+            It is useful to fit into various environments, but I feel that bringing original, multilayered approaches to problems can be my strength in research.
             <br><br>
         </section>
 
@@ -99,29 +99,29 @@
 
             <p>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                The problem settles in a big data environment, precisely in <b>data integration systems</b>, whose goal is to provide a homogeneous access to data from different sources.
-                A major property of data integration systems is this necessity to work with data sources that evolve indepently, on different formats, with different access times, and a lack of available information about the data.
-                This is a key difference with regular DBMS, and it calls for specific optimisation techniques, as it will be introduced in the following paragraphs.
+                The problem arises in a big data environment, specifically in <b>data integration systems</b>, whose goal is to provide a homogeneous access to data from different sources.
+                A major characteristic of data integration systems is this need to work with data sources that evolve independently, on different formats, with different access times, and with a lack of available information about the data.
+                This is a key difference from regular DBMS, and it calls for specific optimisation techniques, as it will be introduced in the following paragraphs.
                 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Data integration systems follow the goal of DBMS to provide a semantic-oriented access to data, thus answering to human queries through an unified language.
-                We chose to focus on the relational model, where queries are parsed as logical expressions over relational algebra.
-                An expression answering to a specific query is called "query plan", and each meets several equivalent plans, that produce the same output for the same sources, but make it through a different sequence of operators.
-                Though such plans are algebraically similar, the difference between their computing time can be arbitrarily high.
+                Data integration systems follow the goal of DBMSs to provide a semantic-oriented access to data, thus answering to human queries through an unified language.
+                We have chosen to focus on the relational model, where queries are parsed as logical expressions over relational algebra.
+                An expression that answers a particular query is called a "query plan", and each one corresponds to several equivalent plans, that produce the same output for the same sources, but do so through a different sequence of operators.
+                Although such plans are algebraically similar, the difference between their computation times can be arbitrarily large.
                 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 The goal of <b>query optimisation</b> is to search for the best, or at least a good enough query plan.
-                Some optimisation techniques over some operators are insured to always be optimal.
+                Some optimisation techniques over some operators are guaranteed to always be optimal.
                 It is not the case for joins. They are a major operator in relational algebra and can appear in number in complex queries.
-                Unfortunately, their outputs are difficult to predict, they have a huge computing time, and the possibilites to structure them become impossible to explore exhaustively for queries involving many joins.
+                Unfortunately, their results are difficult to predict, they have a huge computation time, and the possibilities of structuring them become impossible to explore exhaustively for queries with many joins.
                 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Regular relational DBMS meet this issue by saving information about the data that enables them to make decent predictions on the size of the joins.
+                Regular relational DBMSs address this problem by storing information about the data that allows them to make decent predictions about the size of the joins.
                 However, this method can't be applied to a data integration problem, because the sources are independent.
-                The ideas I am exploring consist in <b>"dynamic"</b> query optimisation. The goal is to start processing a sub-optimal plan, and to switch to a better one during execution thanks to information gained along the way.
-                My work can be summarized as the seek of answers to these questions:
+                The ideas I am exploring consist of <b>"dynamic"</b> query optimisation. The aim is to start processing a sub-optimal plan, and to switch to a better one during execution thanks to information gained along the way.
+                My work can be summarised as seeking answers to these questions:
                 <ul>
-                    <li>What sub-optimal plan to start with</li>
+                    <li>Which sub-optimal plan to start with</li>
                     <li>What information to collect</li>
-                    <li>How this information allows computing better plans</li>
-                    <li>Is the plan improvement worth the cost of collecting information</li>
+                    <li>How this information can be used to compute better plans</li>
+                    <li>Is the plan improvement worth the cost of collecting the information</li>
                     <li>How to switch plan without losing the results computed so far</li>
                 </ul>
             </p>
@@ -130,35 +130,35 @@
 
             <p>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Among the questions set aobve, the first that I have been told to look at was the last one: "How to switch from a plan to another without losing the results computed so far?"
-                To begin, we looked only at plans where sources are joined over the same attribute, and forgot all the other operators in the query.
-                The hypothesis had been made by Maxime Buron that the "double-pipelined hashjoin", a specific algorithm to process joins, could be benefic in that case.
-                I made an implementation of this algorithm on <a href="https://gitlab.inria.fr/cedar/tatooine"><b><u>Tatooine</u></b></a>, a data integration simulation project Maxime had already worked on.
-                We improved this implemenatation until it got performances similar to other algorithms, thus justifying that it could be used in pratice.
+                Among the questions listed above, the first I was told to look at was the last one: "How to switch from one plan to another without losing the results computed so far?"
+                To begin with, we only looked at plans in which sources are joined over the same attribute, and forgot all the other operators in the query.
+                Maxime Buron had hypothesised that the "double-pipelined hashjoin", a specific algorithm for processing joins, might be useful in this case.
+                I made an implementation of this algorithm on <a href="https://gitlab.inria.fr/cedar/tatooine"><b><u>Tatooine</u></b></a>, a data integration simulation project that Maxime had already worked on.
+                We improved this implementation until it got similar performance to other algorithms, thus justifying its use in practice.
                 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                The next step of our work has been to show how this implementation allowed to move from a plan to "neighbor" plans in constant time, under our hypotheses.
-                Our idea was to start from a plan, search for better ones among its neighbors, apply the transformation if one is found, and repeat the sequence multiple times.
-                This "step-by-step" approach unfortunately proved to be actually very limited in our more recent work.
-                However, we still think that double-pipelined hashjoin has properties that can be useful to transfer the work already computed from a plan to another.
+                The next step of our work was to show how this implementation allowed us to move from one plan to "neighbouring" plans in constant time, under our hypotheses.
+                Our idea was to start with a plan, search for better ones among its neighbours, apply the transformation if one is found, and repeat the sequence several times.
+                Unfortunately, this "step-by-step" approach proved to be actually very limited in our more recent work.
+                However, we still think that the double-pipelined hashjoin has properties that can be useful for transferring the work already computed from one plan to another.
                 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                I made a poster after one week to introduce my work. Some ideas and results are now deprecated, but the main part of it remains a good introduction to my subject. It can be found <a href="docs/poster.pdf"><b><u>here</u></b></a>.
+                IAfter one week I made a poster to present my work. Some ideas and results are now outdated, but the main part of it is still a good introduction to my subject. It can be found <a href="docs/poster.pdf"><b><u>here</u></b></a>.
             </p>
 
             <h3>Dynamic histogram generation</h3>
 
             <p>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                I have had only three hours in my timetable devoted to research for the last months, so making progress takes time.
-                However, I eventually came with interesting ideas to answer to the question "what information to collect to be able to determine better plans when we have zero initial knowledge about our data sources?".
-                The main issue in this question is the absence of hypothesis about the sources.
-                Some heuristics exist to approximate the size of a join's output, but they require at least the size of the sources as an input, and more precise information about the data repartition to be efficient.
+                I have only had three hours in my timetable devoted to research for the last few months, so it takes time to make progress.
+                However, I finally came up with some interesting ideas to answer to the question "what information should we collect to be able to determine better plans when we have zero initial knowledge about our data sources?".
+                The main problem with this question is the lack of a hypothesis about the sources.
+                Some heuristics exist to approximate the size of the output of a join, but they require at least the size of the sources as input, and more precise information about the data partitioning to be efficient.
                 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <b>Histograms</b> are a common way to store information about the data repartition within a source, and can provide good estimates of join results.
-                Different kinds of histograms exist (equal-width, equal-height), unfortunately they are unusable in a case when data is explored sample by sample from scratch.
-                My idea is an algorithm that computes a sort of histogram that dynamically tends to fit with the data repartition.
-                My first rough tests seem promising, and if it is proven efficient, it could be a very useful tool for dynamic query optimisation.
+                <b>Histograms</b> are a common way of storing information about the data partitioning within a source, and can provide good estimates of join results.
+                There are different types of histograms (equal-width, equal-height), but unfortunately they are unusable in a case where the data is explored sample by sample from scratch.
+                My idea is an algorithm that computes a kind of histogram that dynamically tends to fit with the data partitioning.
+                My first rough tests seem promising, and if it proves to be efficient, it could be a very useful tool for dynamic query optimisation.
                 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                My current objectives are to go further with this idea. More precisely, here is what I would like to do before my 2025 internship:
+                My current goals are to take this idea further. More specifically, here is what I would like to do before my internship in 2025:
                 <ul>
                     <li>Have a rigorous formulation for the dynamic histograms and prove some of their properties</li>
                     <li>Determine the algorithmic complexity of their computation</li>
