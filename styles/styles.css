@@ -4,7 +4,7 @@
 
 html, body, div, a,
 h1, h2, h3, h4, h5, h6, p, blockquote,
-em, img, strong, var, caption, .articles_list, .articles_list,
+em, img, strong, var, caption,.articles_list, .articles_list,
 table, tbody, tfoot, thead, tr, th, td,
 article, aside, figcaption, footer, header,
 nav, section, button {
@@ -681,11 +681,12 @@ svg {
 }
 
 .article {
+  box-sizing: border-box;
   width:100%;
   display:inline-flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.5em 10em 0.5em 10em;
+  padding: 0.5em 15em 0.5em 15em;
 }
 
 .article_presentation {
