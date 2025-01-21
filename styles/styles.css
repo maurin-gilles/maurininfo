@@ -159,6 +159,7 @@ p a:hover {
 /***************************************************************************************************************************************************************************************************/
 
 
+
 .index_main {
   background-color: #EBE8E7;
   width:100%;
@@ -166,14 +167,27 @@ p a:hover {
 }
 
 .main_image {
-  max-width:100%;
-  width:100%;
+  max-width:200%;
+  width:200%;
   margin-top:130px;
+  display:inline-flex;
+  overflow:hidden;
 }
 
 .main_image img {
   width:100%;
+  overflow:hidden;
   border-bottom: solid thick var(--ppl);
+  animation: scrolling 40s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .index_main h1 {
@@ -182,6 +196,7 @@ p a:hover {
   font-size: 5em;
   border-bottom: 5vh;
 }
+
 
 
 /***************************************************************************************************************************************************************************************************/
