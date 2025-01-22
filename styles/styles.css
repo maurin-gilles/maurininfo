@@ -162,21 +162,19 @@ p a:hover {
 
 .index_main {
   background-color: #EBE8E7;
-  width:100%;
+  max-width:100%;
+  overflow:hidden;
   z-index: 1;
 }
 
 .main_image {
-  max-width:200%;
   width:200%;
   margin-top:130px;
   display:inline-flex;
-  overflow:hidden;
 }
 
 .main_image img {
   width:100%;
-  overflow:hidden;
   border-bottom: solid thick var(--ppl);
   animation: scrolling 40s linear infinite;
 }
