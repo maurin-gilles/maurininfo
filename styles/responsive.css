@@ -18,8 +18,9 @@
 
     .menu-logo {
       position: absolute;
-      left: 0;
+      left:0;
       top: 50%;
+      padding-left:2vw;
       transform: translateY(-50%);
     }
   
