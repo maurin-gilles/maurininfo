@@ -344,15 +344,26 @@ p a:hover {
   margin:0 0 -1em 40vw;
 }
 
-/* Music */
+/* Philosophy */
 
-#aboutme_music {
-  margin-top: 8vh;
+#aboutme_philo {
+  margin-top: 9vh;
   rotate:-2deg;
 }
 
-#aboutme_music p, #aboutme_music h2 {
+#aboutme_philo p, #aboutme_philo h2 {
   rotate:2deg;
+}
+
+/* Music */
+
+#aboutme_music {
+  margin-top: 9vh;
+  rotate:8deg;
+}
+
+#aboutme_music p, #aboutme_music h2 {
+  rotate:-8deg;
 }
 
 /******************/
@@ -840,9 +851,18 @@ svg {
     margin-left:9vw;
   }
 
-  #iwh_isff, #aboutme_music {
+  #iwh_isff, #aboutme_philo {
     width:70vw;
     margin-right:8vw;
+  }
+
+  #aboutme_music{
+    width:80vw;
+    margin-right:25vw;
+  }
+
+  #aboutme_music p{
+    padding-bottom:1.5em;
   }
 
   #iwh_lebon {
