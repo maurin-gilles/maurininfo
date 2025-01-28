@@ -1,0 +1,23 @@
+@media only screen and (max-width: 767px) { 
+
+    html, body {
+        overflow-x: hidden;
+        width:100vw;
+    }
+
+    body {
+        padding-bottom:5vh;
+    }
+
+    h1 {
+        font-size:220%;
+        padding:0 4vw 0 4vw;
+    }
+    
+    p {
+        font-size:115%;
+        padding:0 8vw 0 8vw;
+        margin:4vh 0 4vh 0;
+    }
+  
+}

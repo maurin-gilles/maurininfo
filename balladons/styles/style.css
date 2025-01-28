@@ -1,0 +1,43 @@
+/* Coolors */
+
+* {
+    font-family: Helvetica, Verdana, sans-serif;
+}
+
+:root {
+    --c8:#bb126f;
+    --c7:#493657;
+    --c6:#D56DA1;
+    --c5:#FFC09F;
+    --c4:#FFEE93;
+    --c3:#FCF5C7;
+    --c2:#ADF7B6;
+    --c1:#79ADDC;
+    --bg:#f0f5f4;
+}
+
+html, body {
+    overflow-x: hidden;
+    width:100vw;
+}
+
+body {
+    padding-bottom:10vh;
+}
+
+h1 {
+    font-size:275%;
+    text-align:center;
+}
+
+p {
+    text-align:justify;
+    font-size:115%;
+    max-width:100%;
+    padding:0 18vw 0 18vw;
+    margin:4vh 0 4vh 0;
+}
+
+.accueil_site{
+    margin:6vh 0 6vh 0;
+}
