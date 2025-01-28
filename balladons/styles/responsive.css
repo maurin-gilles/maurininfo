@@ -19,5 +19,10 @@
         padding:0 8vw 0 8vw;
         margin:4vh 0 4vh 0;
     }
+
+    .p_bg {
+        padding:15px;
+        margin:4vh 4vw 4vh 4vw;
+    }
   
 }
