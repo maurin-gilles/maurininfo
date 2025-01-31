@@ -7,7 +7,7 @@
     --c3:#FCF5C7;
     --c2:#ADF7B6;
     --c1:#79ADDC;
-    --bg:#f0f5f4;
+    --bg:rgb(240,239,239);
 }
 body {
     font-family: Sans-Serif;
@@ -136,7 +136,7 @@ body {
       top: 0;
       margin: -40px;
       padding: 75px 50px 50px;
-      background:  #dae9e6;
+      background:  rgb(240,239,239);
       border:solid 10px var(--c7);
       border-radius:0 0 0 20px;
       -webkit-font-smoothing: antialiased;
