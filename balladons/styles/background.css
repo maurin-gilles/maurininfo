@@ -4,28 +4,13 @@
     }
 }
 
-.no-disappear {
-    rotate:1deg;
-}
-
-.no-no-disappear {
-    rotate:-1deg;
-}
-
-.p_bg {
-    padding:30px;
-    border-radius:15px;
-    margin:4vh 18vw 4vh 18vw;
-    background-color: rgba(229,228,230,75%);
-}
-
 .background {
     position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    background: rgb(240,239,239);
+    background: #f0efef;
     overflow: hidden;
 }
 
