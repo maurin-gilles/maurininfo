@@ -106,6 +106,10 @@ ul {
     transform:rotate(5deg);
 }
 
+.sous_titre {
+    font-size:220%;
+}
+
 .liste_conteurs {
     display: flex;
     flex-flow:row wrap;
@@ -163,15 +167,12 @@ ul {
   }
 
 .conteur img {
+    margin:auto;
     margin-top:1rem;
     position: relative;
     max-height: 20em;
     max-width:20em;
     box-shadow: 12px 12px var(--or);
-}
-
-#anciens {
-    font-size:220%;
 }
 
 .text_column a span {
