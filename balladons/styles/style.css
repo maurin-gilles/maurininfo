@@ -68,7 +68,7 @@ a {
     }
 }
 
-#accueil_container {
+.accueil_container {
     background-color:var(--wh);
     padding:4vh 12vw 5vh 12vw;
 }
@@ -81,7 +81,7 @@ h1 {
     position:relative;
     font-size:275%;
     text-align:center;
-    z-index:3;
+    z-index:2;
     color:var(--bl);
 }
 
@@ -89,7 +89,7 @@ p {
     position:relative;
     text-align:justify;
     font-size:100%;
-    z-index:3;
+    z-index:2;
 }
 
 .main_par {
@@ -152,6 +152,7 @@ ul {
 
 .conteur {
     margin: 0 2.5em 2.5em 2.5em;
+    margin:0;
     display:flex;
     flex-direction: column;
 }

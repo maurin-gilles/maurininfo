@@ -32,7 +32,6 @@ body {
     background: var(--bl);
     color:  var(--wh);
     padding: 20px;
-    z-index: 1;
     -webkit-user-select: none;
     user-select: none;
     box-sizing: border-box;

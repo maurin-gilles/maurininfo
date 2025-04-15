@@ -38,8 +38,70 @@
         object-fit: cover;
     }
 
-    #accueil_container {
+    .accueil_container {
         padding:4vh 0 0 0;
     }
+
+    #conteurs_intro {
+        flex-direction: column;
+        margin-bottom:6vh;
+    }
+    
+    .image_column {
+        flex-direction: row;
+    }
+
+    .image_column img {
+        max-height:8em;
+        margin:0 1em 0 1em;
+        object-fit: contain;
+    }
+
+    .text_column {
+        padding:2em 0 2em 0;
+        width:100vw;
+    }
+
+    .page_intro, .main_par {
+        width:84vw;
+        font-size:115%;
+        padding:4vh 8vw 4vh 8vw;
+        margin:0;
+    }
+
+    .sous_titre {
+        width:80vw;
+        padding:0;
+        margin:auto;
+    }
+
+    .text_column a span {
+        margin-top:-2em;
+        margin-bottom:1em;
+    }
+
+    .liste_conteurs {
+        gap:1em 1em;
+        margin:6vh 0 2vh 0;
+        padding: 0 2vw 0 2vw;
+    }
   
+    .conteur {
+        margin: 0 1em 1.5em 1em;
+        padding:0;
+        max-width:35vw;
+    }
+
+    .conteur h2, .conteur h3, .conteur p, .conteur a {
+        max-width:35vw;
+    }
+
+    .conteur img {
+        margin:auto;
+        margin-top:1rem;
+        position: relative;
+        max-height: 10em;
+        max-width:10em;
+        box-shadow: 6px 6px var(--or);
+    }
 }
