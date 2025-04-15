@@ -44,19 +44,19 @@ a {
     max-height: 40vh;
     object-fit: cover;
     opacity: 1;
-    animation: fade 20s infinite;
+    animation: fade 14s infinite;
 }
 
 #accueil_img_haut {
     object-position: 0 30%;
-    animation-delay:-6s;
+    animation-delay:-4.2s;
 }
 
 #accueil_img_bas {
     object-position: 0 20%;
     margin-top:-100%;
     opacity:0;
-    animation-delay: 4s;
+    animation-delay: 2.8s;
 }
 
 @keyframes fade {
