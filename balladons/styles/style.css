@@ -49,21 +49,21 @@ a {
 
 #accueil_img_haut {
     object-position: 0 30%;
-    animation: fade 20s infinite;
+    animation-delay:-6s;
 }
 
 #accueil_img_bas {
     object-position: 0 20%;
     margin-top:-100%;
     opacity:0;
-    animation-delay: 10s
+    animation-delay: 4s;
 }
 
 @keyframes fade {
-    0%, 100% {
+    0%, 20%, 80%, 100% {
         opacity: 0;
     }
-    25%, 75% {
+    30%, 70% {
         opacity: 1;
     }
 }

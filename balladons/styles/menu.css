@@ -84,7 +84,7 @@ body {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background:  var(--wh);
+    background:  var(--bl);
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -132,6 +132,8 @@ body {
       flex-direction: column;
       align-items: flex-end;
       margin:30px;
+      background:var(--wh);
+      border:solid 4px var(--bl);
     }
     
     .menu {
@@ -141,15 +143,19 @@ body {
       right: -300px;
       top: 0;
       margin: -40px;
-      padding: 75px 50px 50px;
+      padding: 70px 10px 20px 60px;
       background:  var(--wh);
-      border:solid 10px var(--bl);
+      border:solid 4px var(--or);
       border-radius:0 0 0 20px;
       -webkit-font-smoothing: antialiased;
       /* to stop flickering of text in safari */
       transform-origin: 0% 0%;
       transform: translateX(0%);
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    .menu ul {
+      padding:0;
     }
   
     .menu-container input:checked ~ .menu {

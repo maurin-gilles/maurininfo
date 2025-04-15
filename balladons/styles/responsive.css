@@ -1,3 +1,11 @@
+:root {
+    --bl:#252250;
+    --or:#e9402d;
+    --wh:#f9f9f9;
+    --bo:#873242;
+    --be:#f1b7b0;
+}
+
 @media only screen and (max-width: 767px) { 
 
     html, body {
@@ -12,36 +20,26 @@
     
     p {
         font-size:115%;
-        padding:0 8vw 0 8vw;
-        margin:4vh 0 4vh 0;
+        padding:4vh 8vw 4vh 8vw;
+        margin:0;
     }
 
-    .container {
-        background-color: rgba(0,0,0,0%);
-        width:90vw;
-        margin:auto;
-        padding:0;
+    #index_page {
+        background: black;
+    }
+
+    #accueil_img_container {
+        max-width: 100vw;
     }
 
     .accueil_img {
-        max-width:100%;
-        position:absolute;
+        width: 100vw;
+        max-height: 30vh;
+        object-fit: cover;
     }
 
-    .accueil_site {
-        position:absolute;
-        margin-top:15vh;
-        border-radius: 30px;
-        position:relative;
-        z-index:2;
-        background-color:hsla(6, 81%, 64%,0.6);
-        padding:0.5em;
-        font-size:2em;
-/*         padding:0.5em 0.2em 0.5em 0.2em; */
-    }
-
-    .accueil_par {
-        position:relative;
+    #accueil_container {
+        padding:4vh 0 0 0;
     }
   
 }
