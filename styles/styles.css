@@ -29,6 +29,9 @@ nav, section, button {
 }
 
 
+html {
+  background-color: #EBE8E7;
+}
 
 a {
   overflow: visible;
