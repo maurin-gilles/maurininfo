@@ -1,0 +1,45 @@
+@media only screen and (max-width: 767px) { 
+    .blog_main h1 {
+        overflow:visible;
+        margin:3vh;
+        font-size: 3em;
+      }
+
+      .blog_main img {
+        max-width:50vw;
+    }
+
+    .blog_entry_list {
+        padding-top:4vh;
+        gap:2em;
+    }
+
+    .blog_entry {
+        padding:0.5em 1em;
+        max-width:80vw;
+        border: solid 4px var(--ppl);
+    }
+
+    .blog_entry * {
+        margin:0.5em;
+    }
+
+    .blog_entry h2 {
+        max-width:70vw;
+        font-size: 200%;
+        text-align:center;
+    }
+
+    .entry_img {
+        gap:0.2em;
+    }
+
+    .entry_img img {
+        max-width:45vw;
+        max-height:35vh;
+    }
+
+    #photo_velo {
+        max-width:65vw;
+    }
+}

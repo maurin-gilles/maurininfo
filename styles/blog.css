@@ -67,3 +67,15 @@
     text-align: justify;
     text-justify: inter-word;
 }
+
+#photo_velo {
+    max-width:35vw;
+}
+
+.entry_txt a,.entry_txt b,.entry_txt p {
+    margin-left:0;
+}
+
+.entry_txt a {
+    text-decoration: underline;
+}
