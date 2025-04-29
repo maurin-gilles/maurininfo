@@ -9,8 +9,16 @@
         max-width:50vw;
     }
 
+    .navigation_rapide{
+        display: flex;
+        flex-flow: row wrap;
+        gap:1em;
+        justify-content:center;
+        align-items: center;
+        padding:2vh 7vw;
+    }
+
     .blog_entry_list {
-        padding-top:4vh;
         gap:2em;
     }
 
