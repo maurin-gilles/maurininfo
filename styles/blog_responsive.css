@@ -47,7 +47,12 @@
         max-height:35vh;
     }
 
+    .entry_txt {
+        font-size: 102%;
+    }
+
     #photo_velo {
         max-width:65vw;
     }
+
 }
